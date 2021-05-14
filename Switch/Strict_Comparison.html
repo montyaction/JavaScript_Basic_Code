@@ -1,0 +1,38 @@
+<!-- 
+Strict Comparison
+Switch cases use strict comparison (===).
+
+The values must be of the same type to match.
+
+A strict comparison can only be true if the operands are of the same type.
+
+In this example there will be no match for x:
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = "0";
+
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
