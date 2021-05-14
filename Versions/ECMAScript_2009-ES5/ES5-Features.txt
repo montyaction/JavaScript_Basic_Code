@@ -1,0 +1,39 @@
+ECMAScript 2009 - ES5
+
+ES5 Features
+
+"use strict"
+String.trim()
+Array.isArray()
+Array.forEach()
+Array.map()
+Array.filter()
+Array.reduce()
+Array.reduceRight()
+Array.every()
+Array.some()
+Array.indexOf()
+Array.lastIndexOf()
+JSON.parse()
+JSON.stringify()
+Date.now()
+Property Getters and Setters
+New Object Property Methods
+
+
+ES5 Syntactical Changes
+    Property access [ ] on strings
+    Trailing commas in array and object literals
+    Multiline string literals
+    Reserved words as property names
+
+
+The "use strict" Directive
+
+"use strict" defines that the JavaScript code should be executed in "strict mode".
+
+With strict mode you can, for example, not use undeclared variables.
+
+You can use strict mode in all your programs. It helps you to write cleaner code, like preventing you from using undeclared variables.
+
+"use strict" is just a string expression. Old browsers will not throw an error if they don't understand it.
