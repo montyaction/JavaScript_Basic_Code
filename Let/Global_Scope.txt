@@ -1,0 +1,7 @@
+Global Scope
+Variables declared with var and let are quite similar when declared outside a block.
+
+They will both have Global Scope:
+
+var x = 2;       // Global scope
+let x = 2;       // Global scope

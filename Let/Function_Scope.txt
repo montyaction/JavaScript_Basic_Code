@@ -1,0 +1,11 @@
+Function Scope
+Variables declared with var and let are quite similar when declared inside a function.
+
+They will both have Function Scope:
+
+function myFunction() {
+  var carName = "Volvo";   // Function Scope
+}
+function myFunction() {
+  let carName = "Volvo";   // Function Scope
+}

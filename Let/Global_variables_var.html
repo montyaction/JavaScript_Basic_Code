@@ -1,0 +1,29 @@
+<!-- Global Variables in HTML
+With JavaScript, the global scope is the JavaScript environment.
+
+In HTML, the global scope is the window object.
+
+Global variables defined with the var keyword belong to the window object:
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript Global Variables</h2>
+
+        <p>In HTML, global variable defined with <b>var</b>, will become window variable.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var bikeName = 'Honda CB - 150';
+
+            // window.alert(bikeName)
+
+            document.getElementById("demo").innerHTML = 'I can display ' + window.bikeName;
+        </script>
+    </body>
+</html>
+
