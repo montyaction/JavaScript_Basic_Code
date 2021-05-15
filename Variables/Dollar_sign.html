@@ -1,0 +1,45 @@
+<!--
+JavaScript Dollar Sign $
+Remember that JavaScript identifiers (names) must begin with:
+
+A letter (A-Z or a-z)
+A dollar sign ($)
+Or an underscore (_)
+Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript $</h2>
+
+        <p>The dollar sign is treated as a letter in JavaScript names.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var $ = 2;
+            var $money = 8;
+            document.getElementById("demo").innerHTML = $ + $money;
+        </script>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <script>
+            var $$$ = "Money hai to hani hai";
+            document.write($$$)
+        </script>
+    </body>
+</html>
+
+
+<!--
+Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.
+
+In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements".
+-->

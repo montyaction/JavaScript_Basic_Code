@@ -1,0 +1,51 @@
+<!-- 
+JavaScript Block Scope
+Variables declared with the var keyword cannot have Block Scope.
+
+Variables declared inside a block {} can be accessed from outside the block.
+
+Example 
+{
+    var x = 2;
+  }
+  // x CAN be used here
+
+
+Before ES2015 JavaScript did not have Block Scope.
+
+Variables declared with the let keyword can have Block Scope.
+
+Variables declared inside a block {} cannot be accessed from outside the block:
+
+Example
+{
+  let x = 2;
+}
+// x can NOT be used here
+
+Redeclaring Variables
+Redeclaring a variable using the var keyword can impose problems.
+
+Redeclaring a variable inside a block will also redeclare the variable outside the block:
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>Declaring a Variable Using var</h2>
+
+        <p id="demo"></p>
+        <script>
+            var x = 19;
+            // Here x is 19
+            {
+                var x =21;
+                // Here x is 21
+            }
+            // Here x is 21
+            document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>

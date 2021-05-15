@@ -1,0 +1,30 @@
+<!--
+Function Scope
+Variables declared Locally (inside a function) have Function Scope.
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript Scope</h2>
+
+        <p>Outside myFunction() bikeName is undefine.</p>
+
+        <p id="demo"></p>
+        
+        <p id="demo2"></p>
+        <script>
+            myFunction();
+
+            function myFunction() {
+                var bikeName = "YAMAHA F-150";
+                    document.getElementById("demo").innerHTML = typeof bikeName + " " + bikeName;
+            }
+            document.getElementById("demo2").innerHTML = typeof bikeName;
+        </script>
+    </body>
+</html>
+
+<!-- Local variables can only be accessed from inside the function where they are declared. -->
