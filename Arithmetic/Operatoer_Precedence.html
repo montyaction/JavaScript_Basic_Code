@@ -1,0 +1,56 @@
+<!-- Operator Precedence
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Multiplication has precedence over addition.</p>
+
+<p>100 + 50 * 3</p>
+<p id="demo"></p>
+<br>
+<br>
+<br>
+
+<p>Multiplication has precedence over addition.</p>
+<p>But parenthesis has precedence over multiplication.</p>
+
+<p>(100 + 50) * 3</p>
+<p id="demo1"></p>
+
+<br>
+<br>
+<br>
+<p>When many operations has the same precedence, they are computed from left to right.</p>
+
+<p>100 + 50 - 3</p>
+<p id="demo2"></p>
+
+
+<script>
+document.getElementById("demo").innerHTML = 100 + 50 * 3;
+
+// Is the result of example above the same as 150 * 3, or is it the same as 100 + 150?
+
+// Is the addition or the multiplication done first?
+
+// As in traditional school mathematics, the multiplication is done first.
+
+// Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+
+// And (as in school mathematics) the precedence can be changed by using parentheses:
+
+// Example
+document.getElementById("demo1").innerHTML = (100 + 50) * 3;
+
+// When using parentheses, the operations inside the parentheses are computed first.
+
+// When many operations have the same precedence (like addition and subtraction), they are computed from left to right:
+document.getElementById("demo2").innerHTML = 100 + 50 - 3;
+</script>
+
+</body>
+</html>

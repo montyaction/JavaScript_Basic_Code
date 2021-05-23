@@ -1,0 +1,11 @@
+body{
+    background-color: gray;
+}
+
+.container{
+    margin: 1rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
