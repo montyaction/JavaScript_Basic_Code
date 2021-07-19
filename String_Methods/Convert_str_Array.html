@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>Ckick "Try it" to display the first array element, after a string split.</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var str = "a,b,c,d,e,f"
+                var arr = str.split(",");
+                document.getElementById("demo").innerHTML = 
+                arr[0] +"<br>"+ arr[1] +"<br>"+ arr[2];
+            }
+        </script>
+    </body>
+</html>

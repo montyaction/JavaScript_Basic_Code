@@ -1,0 +1,17 @@
+Object Properties
+The name:values pairs in JavaScript objects are called properties:
+
+Property	Property Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue
+
+
+Accessing Object Properties
+You can access object properties in two ways:
+
+objectName.propertyName
+or
+
+objectName["propertyName"]

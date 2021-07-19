@@ -1,0 +1,28 @@
+<!-- If a parameter is negative, the position is counted from the end of the string.
+
+This example slices out a portion of a string from position -12 to position -6:
+
+Example -->
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript String Methods</h2>
+
+        <p>The slice() method extract a parts of a string the extracted parts in a new string:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var str = "Apple, Banana, Kiwi ";
+            var res = str.slice(-12);
+            var res1 = str.slice(-19, -14);
+            var res2 = str.slice(-12, -6);
+            var res3 = str.slice(-5, -1);
+            var res4 = str.slice(-19);
+            document.getElementById("demo").innerHTML =
+            res + "<br>" + res1 + "<br>" + res2 + "<br>" + res3 + "<br>" + res4;
+        </script>
+    
+    </body>
+</html>

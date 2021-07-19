@@ -1,0 +1,43 @@
+Object Methods
+Objects can also have methods.
+
+Methods are actions that can be performed on objects.
+
+Methods are stored in properties as function definitions.
+
+Property	Property Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue
+fullName	function() {return this.firstName + " " + this.lastName;}
+
+A method is a function stored as a property.
+
+
+Example
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+
+The this Keyword
+
+In a function definition, this refers to the "owner" of the function.
+
+In the example above, this is the person object that "owns" the fullName function.
+
+In other words, this.firstName means the firstName property of this object.
+
+Read more about the this keyword at JS this Keyword.
+
+Accessing Object Methods
+You access an object method with the following syntax:
+
+objectName.methodName()

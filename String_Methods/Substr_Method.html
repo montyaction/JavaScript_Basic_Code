@@ -1,0 +1,42 @@
+<!-- If you omit the second parameter, substring() will slice out the rest of the string.
+
+
+The substr() Method
+
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+
+Example -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+var res0 = str.substr(0);
+var res1 = str.substr(7);
+
+// The difference is that substring() cannot accept negative indexes.
+var res2 = str.substring(7, 13);
+
+var res3 = str.substr(7, 12);
+
+var res4 = str.substr(-4);
+
+document.getElementById("demo").innerHTML =
+res0 + "<br>" + res1 + "<br>" + res2 + "<br>" + res3 +"<br>"+ res4;
+</script>
+
+</body>
+</html>
+
+

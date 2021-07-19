@@ -1,0 +1,75 @@
+<!-- Escape Character
+
+Because strings must be written within quotes, JavaScript will misunderstand this string:
+
+var x = "We are the so-called "Vikings" from the north.";
+The string will be chopped to "We are the so-called ".
+
+The solution to avoid this problem, is to use the backslash escape character.
+
+The backslash (\) escape character turns special characters into string characters:
+
+Code	Result	Description
+\'	    '	    Single quote
+\"	    "	    Double quote
+\\	    \	    Backslash
+
+The sequence \"  inserts a double quote in a string:
+
+Example -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>The escape sequence \" inserts a double quote in a string.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = "1.We are the so-called \'Vikings\' from the north.";
+var y = "2.We are the so-called \"Vikings\" from the north.";
+var z = "3.We are the so-called \\Vikings\\ from the north.";
+
+// The sequence \'  inserts a single quote in a string:
+var a = '4.It\'s alright.';
+
+// The sequence \\  inserts a backslash in a string:
+var b = "5.The character \\ is called backslash.";
+
+// \b	    Backspace
+var c = "6.The character \b is called backslash.";
+
+// \f	    Form Feed
+var d = "7.The character \f is called Form Feed.";
+
+// \n	    New Line
+var e = "8.The character \n is called New Line.";
+
+// \r	    Carriage Return
+var f = "9.The character \r is called Carriage Return.";
+
+// \t	    Horizontal Tabulator
+var j = "10.The character \t is called Horizontal Tabulator.";
+
+//    \v Vertical Tabulator
+var h = "11.The character \v is called Vertical Tabulator.";
+
+document.getElementById("demo").innerHTML = x; 
+document.write(y +"<br> <br>");
+document.write(z +"<br> <br>");
+document.write(a +"<br> <br>");
+document.write(b +"<br> <br>");
+document.write(c +"<br> <br>");
+document.write(d +"<br> <br>");
+document.write(e +"<br> <br>");
+document.write(f +"<br> <br>");
+document.write(j +"<br> <br>");
+document.write(h +"<br> <br>");
+
+
+</script>
+
+</body>
+</html>
