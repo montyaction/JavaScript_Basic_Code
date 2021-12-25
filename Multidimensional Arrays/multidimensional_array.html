@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        
+        <h2>Multidimensional Arrays</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            var arys = [
+                ["Shashi", 38, "Female", "Hostel Warden"],
+                ["Bizend", 35, "Male", "Famar"],
+                ["Ashish", 33, "Female", "Teacher"],
+                ["Ashwani", 30, "Female", "Computer Operator"],
+                ["Archana", 27, "Female", "Teacher"],
+                ["Anju", 25, "Female", "Nurse"],
+                ["Manju", 22, "Female", "Engineering"],
+                ["Ajay", 20, "Male", "IAS"]
+            ];
+            document.write("<table border='1px' cellspacing = '0'")
+
+            for (var a =0; a < arys.length; a++){
+
+                document.write("<tr>");
+
+                for(var b = 0; b < arys[a].length; b++){
+
+                    document.write("<td>" + arys[a][b] + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>")
+
+            document.write("Arrays Lenght = " + arys.length);
+            
+            document.getElementById("demo").innerHTML = arys[0][3];
+        </script>
+
+    </body>
+</html>

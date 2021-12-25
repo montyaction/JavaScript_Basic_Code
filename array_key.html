@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>span{color: tomato;}</style>
+    </head>
+    <body>
+        <h2>JavaScript Array</h2>
+        <h3>Array.Keys()</h3>
+        <p>The <span>Array.keys()</span> method returns an Array Iterator object with the keys of an array.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            const keys = fruits.keys();
+
+            let text = "";
+            for (let x of keys) {
+                text += x + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript Array.map()</h2>
+        <p>Creates a new array by performing a function on each array element.</p>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            const numbers1 = [45, 4, 9, 16, 25];
+            const numbers2 = numbers1.map(myFunctionA);
+            const numbers3 = numbers1.map(myFunctionB);
+
+            document.getElementById("demo1").innerHTML = numbers2;
+            
+            document.getElementById("demo2").innerHTML = numbers3;
+            
+            function myFunctionA(value, index, array) {
+                return value * 2;
+            }
+            
+            function myFunctionB(value) {
+                return value * 2;
+            }
+
+            var a = [
+                {fName : "Monty", lName : "Kanwar", age : 29},
+                {fName : "Rahul", lName : "Kumar", age : 25},
+                {fName : "Mona", lName : "Darling", age : 27},
+            ];
+
+            var b = a.map(test);
+
+            document.write(b);
+
+            function test(x) {
+                return x.fName + " " + x.lName + " " + x.age + "<br>";
+            }
+
+        </script>
+    </body>
+</html>

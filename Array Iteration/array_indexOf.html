@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                color: tomato;
+            }
+            div{
+                background-color: rgb(250, 236, 154);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>JavaScript Array</h2>
+        <h3>Array.indexOf()</h3>
+        <p>The <span>indexOf()</span> method searches an array for an element value and return its position.</p>
+        <div>
+            <p><strong>Note:</strong> The first item has position 0, the second item has position 1, and so on.</p>
+        </div>
+
+        <p id="demo"></p>
+
+        <script>
+            const fruits = ["Apple", "Orange", "Apple", "Mango"];
+            let position = fruits.indexOf("Mango") + 1;
+
+            document.getElementById("demo").innerHTML = position;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h2>JavaScript Arrays</h2>
+        <h3>Array.isArraya()</h3>
+
+        <script>
+            var a = ["sanjay", "Arun", "Rehman", "Mashiha"]
+            var m = "Rahul";
+            var n = 456;
+
+            var b = Array.isArray(a);
+            document.write(a + "<br>");
+            document.write(b + "<br><br>");
+
+            var o = myFunction(n);
+
+            function myFunction(o){
+
+                if(Array.isArray(o)){
+                    document.write("This is an Array");
+                }else{
+                    document.write("This is not an Array");
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

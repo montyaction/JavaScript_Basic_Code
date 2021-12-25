@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>span{color: tomato;}p:nth-child(4) {color: green;}</style>
+    </head>
+    <body>
+        
+        <h2>JavaScript Array</h2>
+        <h3>Array.lastIndexOf()</h3>
+        <p><span>Array.lastIndexOf()</span> is the same as <span>Array.indexOf()</span>, but return the position of the last occurrence of the specified element.</p>
+        <p>Answer is</p>
+        <p id="demo"></p>
+
+        <script>
+            const fruits = ["Apple", "Orange", "Apple", "Mango"];
+            let position = fruits.lastIndexOf("Apple") + 1;
+
+            document.getElementById("demo").innerHTML = position;
+
+            var a = ["Sanjay", "Aman", "Rehman", "Rahul", "Mina", "Aman"]
+            document.write(a + "<br><br>");
+            
+            var b = a.indexOf("Neha", 2);
+            document.write("Index is = " + b + "<br><br>");
+
+            var c = a.lastIndexOf("Aman", 2);
+            document.write(c);
+
+        </script>
+    </body>
+</html>

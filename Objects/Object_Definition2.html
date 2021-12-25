@@ -8,16 +8,23 @@
 
         <script>
             // Create an object:
-            var person = {
-                fName:"Ghanta",
-                lName:"Lal",
-                age: 35,
-                hairColor:"brown"
-            };
+            var person = new Object();
+
+                person.fName = "Ghanta";
+                person.lName = "Lal";
+                person.age =  35;
+                person.hairColor = "bron";
+            
 
             // Display some data from the object:
             document.getElementById("demo").innerHTML = 
             person.fName + " is " + person.age + " years old.";
+
+            for(var key in person){
+                document.write(key + " : " + person[key] + "<br>")
+            }
+
+            console.log(person);
         </script>
     </body>
 </html>

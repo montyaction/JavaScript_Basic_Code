@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+           
+            .container {
+                width: 100vw;
+                height: 100vh;
+                background: #2ecc71;
+                position: relative;
+            }
+            h2, h3, p{
+                text-align: center;
+            }
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            h3 {
+                margin-top: 7px;
+            }
+            .box1 {
+                position: absolute;
+                height: 25rem;
+                width: 30rem;
+                border: 1px solid black;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .box2 {
+                position: absolute;
+                height: 20rem;
+                width: 25rem;
+                border: 1px solid rgb(184, 25, 25);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .box3 {
+                position: absolute;
+                height: 15rem;
+                width: 20rem;
+                border: 1px solid rgb(8, 175, 50);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .box4 {
+                height: 10rem;
+                width: 15rem;
+                position: absolute;
+                background: #27ae60;
+                border: 1px solid #000201;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h2>JavaScript new Date</h2>
+    
+            <div class="box1">
+                <div class="box2">
+                    <div class="box3">
+                        <h3>Today is</h3>
+                        <div class="box4">
+                            <p id="demo"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <script>
+            var now = new Date();
+
+            document.getElementById("demo").innerHTML = now;
+
+            // document.write(now);
+            // document.write(now.toDateString());
+            // document.write(now.getDay());
+            // document.write(now.getMonth());
+            // document.write(now.getFullYear());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+    <style>
+        span{
+            color: rgb(240, 110, 110);
+        }
+        body:first-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Shifting Elements</h2>
+
+    <p>Shifting is equivalent to popping, working on the first element instead of the last.
+        The <span>shift()</span> method removes the first array element and "shift" all other element to a lower index.</p>
+
+    <p id="demo1"></p>
+    <p>After use shift method</p>
+    <p id="demo"></p>
+
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits;
+        let x = fruits.shift();
+
+        document.getElementById("demo").innerHTML = fruits;
+        document.write(x);
+
+        // unshift method
+
+        fruits.unshift(" Lemon");
+        document.write(fruits);
+    </script>
+</body>
+</html>

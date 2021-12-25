@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <h2>Declaring an Array Using const</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            const cars = ["Saab", "Volvo", "BMW"];
+            // Here cars[0] is "Saab"
+            {
+                const cars = ["Toyota", "Volvo", "BMW"];
+                // Here cars[0] is "Toyota"
+                console.log(cars[0]);
+                // Demostration in console
+            }
+            // Here cars[0] is "Saab"
+
+            document.getElementById("demo").innerHTML = cars[0];
+        </script>
+    </body>
+</html>

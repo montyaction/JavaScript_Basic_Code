@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            span{
+                color: tomato;
+            }
+            .bg{
+                background-color: rgb(253, 230, 53);
+            }
+            #demo1, #demo2, #demo3 {
+                color: rgb(14, 190, 14);
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <h2>JavaScript Array</h2>
+        <h3>Array.reduce()</h3>
+        <p>
+            The <span>reduce()</span> method runs a function on each array element to produce (reduce it to ) a single value.
+            <br><br>
+            The <span>reduce()</span> method works from left-to-right in the array. See also <span>reduceRight()</span>.
+            <br><br>
+        </p>
+        <p class="bg">
+            The <span>reduce()</span> method does not reduce the original array.
+        </p>
+        <br>
+        <p>This example finds the sum of all numbers in an array:</p>
+        <p>Use function <span>One</span></p>
+        <p id="demo1"></p>
+        
+        <p>Use function <span>Two</span></p>
+        <p id="demo2"></p>
+
+        <p>Use function <span>Three</span></p>
+        <p id="demo3"></p>
+
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+            let sum1 = numbers.reduce(myFunctionA);
+            let sum2 = numbers.reduce(myFunctionB);
+            
+            //The reduce() method can accept an initial value:
+            let sum3 = numbers.reduce(myFunctionC, 100);
+
+            document.getElementById("demo1").innerHTML = "The sum is " + sum1;
+           
+            document.getElementById("demo2").innerHTML = "The sum is " + sum2;
+            
+            document.getElementById("demo3").innerHTML = "The sum is " + sum3;
+
+            function myFunctionA(total, value, index, array) {
+                return  total + value;
+            }
+            function myFunctionB(total, value) {
+                return  total + value;
+            }
+            function myFunctionC(total, value) {
+                return  total + value;
+            }
+        </script>
+        
+    </body>
+</html>

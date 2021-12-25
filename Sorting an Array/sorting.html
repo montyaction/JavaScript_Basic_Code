@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays Sorting</title>
+</head>
+<body>
+    
+    <h2>JavaScript Arrays</h2>
+    <h3>Sorting an Array</h3>
+
+    <p>The <span>sort()</span> method sort an array alphabetically:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits;
+
+        // Sorting an Array alphabetically
+        fruits.sort();
+        document.getElementById("demo2").innerHTML = fruits;
+
+        // Reversing an Array
+        fruits.reverse();
+        document.getElementById("demo3").innerHTML = fruits;
+
+    </script>
+</body>
+</html>

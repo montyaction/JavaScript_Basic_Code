@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Array</title>
+</head>
+<body>
+    
+    <h2>Looping Array Elements</h2>
+
+    <p>The safest way to loop through an array, is using a <span>for</span> loop:</p>
+
+    <p id="demo"></p>
+
+
+    <script>
+
+        let fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+        let flan = fruits.length;
+
+        let text = "<ul>";
+
+            for (let i = 0; i < flan; i++) {
+                
+                text += "<li>" + fruits[i] + "</li>";
+            }
+            text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+</html>

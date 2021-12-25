@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Array</title>
+    <style>
+        *
+        {
+            margin-left: 10px;
+        }
+        div
+        {
+            background-color: rgb(253, 239, 133);   
+        }
+        strong
+        {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Creating Array</h2>
+
+    <h4>Using the JavaScript Keyword new</h4>
+
+    <p id="demo"></p>
+    <div>
+        <p>The two examples above do exactly the same.</p>
+        <p>There is no need to use <strong>new Array()</strong>.</p>
+        <p>For simplicity, readability and execution speed, use the first one (the array literal method).</p>
+    </div>
+
+    <script>
+        let cars = new Array("Honda City", "Porche 911", "BMW", "Volve");
+
+        console.log(cars);
+        document.write(cars);
+        document.getElementById("demo").innerHTML = cars;
+    </script>
+</body>
+</html>

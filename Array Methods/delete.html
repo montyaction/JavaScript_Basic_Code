@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays Methods</title>
+    <style>
+        #demo{
+            color: green;
+        }
+        #demo1{
+            color: rgb(225, 210, 0);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>JavaScript Arrays Methods</h2>
+
+    <h3>Deleting Elements</h3>
+
+    <p>Since JavaScript arrays are onject, elements can be deleted by using the JavaScript operator <br> <span>delete</span>.</p>
+
+    <p id="demo"></p>
+    <p>After using delete method</p>
+    <p id="demo1"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        
+        delete fruits[0];
+
+        document.getElementById("demo1").innerHTML = fruits;
+
+        // Another Example
+        var a = ["MOnty", 29, "Male", "MCA"];
+        document.write(a + "<br>");
+
+        a[0] = "Mohit";
+        document.write(a + "<br>");
+
+        delete a[1];
+        document.write(a + "<br>");
+        document.write(a[1]);
+
+    </script>
+</body>
+</html>

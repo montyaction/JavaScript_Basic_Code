@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript String Methods</h2>
+
+        <script>
+            var str = "JaveScript is a GREAT is Language";
+
+            var a = str.length;
+            document.write(a + '<br>');
+            
+            var b = str.toLowerCase();
+            document.write(b + '<br>');
+            
+            var c = str.toUpperCase();
+            document.write(c + '<br>');
+            
+            var d = str.includes('is');
+            document.write(d + '<br>');
+            
+            var e = str.startsWith('JaveScript');
+            document.write(e + '<br>');
+            
+            var f = str.endsWith('age');
+            document.write(f + '<br>');
+
+            var g = str.search('is');
+            document.write(g + '<br>');
+            
+            var h = str.match(/is/g);
+            document.write(h + '<br>');
+            
+            var i = str.indexOf('is');
+            document.write(i + '<br>');
+            
+            var j = str.lastIndexOf('is');
+            document.write(j + '<br>');
+            
+            var k = str.replace('is', 'are');
+            document.write(k + '<br>');
+            
+            var l = str.replace(/is/g, 'are');
+            document.write(l + '<br>');
+            
+            // var str2 = "    JavaScript   ";
+            // alert(str2);
+            // var m = str2.trim();
+            // alert(m);
+            
+
+            var n = str.charAt(3);
+            document.write(n + "<br>");
+            
+            var o = str.charCodeAt(1);
+            document.write(o + "<br>");
+            
+            var p = String.fromCharCode(65);
+            document.write(p + "<br>");
+
+            var str3 = "Hello !";
+            var str4 = " World";
+            var q = str3.concat(str, str4); // Concat(cobine) str and str4  for str3
+            document.write(q + "<br>");
+
+            var r = str.split("i"); // Remove every i for string
+            document.write(r + "<br><br>");
+            
+            var s = str.repeat(2); // String repeat two time
+            document.write(s + "<br>");
+            
+            var t = str.substr(3, 10); // print index3 to index10
+            document.write(t + "<br>");
+            
+            var u = str.substring(3, 13); //print index3 to index12
+            document.write(u + "<br>");
+
+            var str5 = 50;
+            var v = str5.toString();
+            document.write(v + 20 + "<br>");
+
+            // var w = str.valueOf();
+            document.write(str.valueOf());
+            
+        </script>
+    </body>
+</html>

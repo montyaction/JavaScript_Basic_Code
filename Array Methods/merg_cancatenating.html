@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 0;
+        }
+        span{
+            color: tomato;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Merging (Concatenating) Arrays</h2>
+
+    <p>The<span> concat() </span>creates a new array by merging (concatenating) existing arrays:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p>The <span>concat()</span> method can take any number of array arguments:</p>
+    <p>Add new arr3 <span>const arr3 = ["Robin", "Morgan"];</span></p>
+    <p id="demo3"></p>
+    <p>The <span>concat()</span> method can also take strings as arguments:</p>
+    <p id="demo4"></p>
+   
+
+
+    <script>
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+
+        document.getElementById("demo1").innerHTML = myGirls + " + " + myBoys;
+
+        // Concatenate (join) myGirls and myBoys
+        const myChildren = myGirls.concat(myBoys)
+
+        document.getElementById("demo2").innerHTML = myChildren;
+        // Concatenate (join many arr)
+        const myChildren1 = myGirls.concat(myBoys, arr3);
+
+        document.getElementById("demo3").innerHTML = myChildren1;
+
+        const arr1 = ["Emil", "Tobias", "Linus"];
+        // also take strings as arguments:
+        const totalarr = arr1.concat("Peter");
+
+        document.getElementById("demo4").innerHTML = totalarr;
+    </script>
+</body>
+</html>

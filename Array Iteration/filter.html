@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h2>JavaScript Array.filter()</h2>
+        <p>Creates a new array with all array element that passes a test.</p>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+            const over18 = numbers.filter(myFunctionA);
+            const over19 = numbers.filter(myFunctionB);
+
+            document.getElementById("demo1").innerHTML = over18;
+            document.getElementById("demo2").innerHTML = over19;
+
+            function myFunctionA(value, index, array) {
+                return value < 18;
+            }
+
+            function myFunctionB(value) {
+                return value > 19;
+            }
+        </script>
+    </body>
+</html>

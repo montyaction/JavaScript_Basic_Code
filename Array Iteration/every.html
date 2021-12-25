@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>JavaScript Array</h2>
+        <h3>Array.every()</h3>
+        <p>The <span>every()</span> method check if all array values pass a test.</p>
+        <p>This example check if all array value are larger than 18:</p>
+
+        <p>Use function <span>One</span></p>
+        <p id="demo1"></p>
+        <p>Use function <span>Two</span></p>
+        <p id="demo2"></p>
+
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+            let allOver18 = numbers.every(myFunctionA)
+            let allOver15 = numbers.every(myFunctionB)
+
+            document.getElementById("demo1").innerHTML = "All over 18 is " + allOver18;
+            
+            document.getElementById("demo2").innerHTML = "All over 15 is " + allOver15;
+
+            function myFunctionA(value, index, array) {
+                return value > 18;
+            }
+            function myFunctionB(value, index, array) {
+                return value < 15;
+            }
+        </script>
+    </body>
+</html>
