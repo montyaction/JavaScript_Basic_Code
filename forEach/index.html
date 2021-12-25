@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach - JavaScript Array</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>JavaScript Arrays</h1>
+    
+    <h2>The forEach() Method</h2>
+
+    <p>forEach() calls a function for each element in an array:</p>
+
+    <p>Computer the sum of the values in an array:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let sum = 0;
+
+        const numbers = [65, 44, 12, 4];
+
+        numbers.forEach(myfunc);
+
+        function myfunc(item) {
+            
+            sum += item;
+
+        }
+        
+        console.log(sum);
+
+        document.getElementById("demo").innerHTML = sum;
+    </script>
+</body>
+</html>

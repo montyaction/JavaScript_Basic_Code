@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Array - JavaScript ES6</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+        .demo {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript ES6</h1>
+    <h2>Destructuring Array</h2>
+
+    <p id="demo"></p>    
+
+    <script>
+        // let user = ["Monty Action", 30 , "Green City",["Male", 30000]];
+
+        // let [name, age = 25, city, [gender, salary]] = user;
+
+        // let [name, ...args] = user;
+
+        function user(){
+            return ["Monty Action", 29, "GreenCity"];
+        }
+
+        let [name, age, city] = user();
+
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        // console.log(gender);
+        // console.log(salary);
+
+        // console.log(args);
+
+
+        document.getElementById("demo").innerHTML = user();
+
+    </script>
+</body>
+</html>
